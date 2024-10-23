@@ -35,4 +35,13 @@ public class Sales {
     public void setTargetSale(int targetSale) {
         this.targetSale = targetSale;
     }
+
+    @Override
+    public String toString() {
+        return "Sales{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", targetSale=" + targetSale +
+                '}';
+    }
 }

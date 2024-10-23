@@ -6,6 +6,7 @@ public class Handset {
     private int instock;
     private String brand;
 
+
     public Handset(int modelNo, double price, int instock, String brand) {
         this.modelNo = modelNo;
         this.price = price;
@@ -43,6 +44,16 @@ public class Handset {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    @Override
+    public String toString() {
+        return "Handset{" +
+                "modelNo=" + modelNo +
+                ", price=" + price +
+                ", instock=" + instock +
+                ", brand='" + brand + '\'' +
+                '}';
     }
 
 }

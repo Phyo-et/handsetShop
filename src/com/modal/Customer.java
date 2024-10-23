@@ -4,6 +4,7 @@ public class Customer {
     private int memberId;
     private String name;
 
+
     public Customer(int memberId, String name) {
         this.memberId = memberId;
         this.name = name;
@@ -25,4 +26,11 @@ public class Customer {
         this.memberId = memberId;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "memberId=" + memberId +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
